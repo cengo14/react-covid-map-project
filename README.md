@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# COVID Map Projesi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, React ve Redux Toolkit kullanarak geliştirilmiş bir COVID harita uygulamasıdır. Kullanıcılar dünya haritası üzerinde herhangi bir ülkeye tıklayarak o ülkenin COVID-19 detaylarına ulaşabilirler. Harita görselleştirmesi için `react-simple-maps` kütüphanesi kullanılmıştır ve dinamik yapılar birim testleri ile doğrulanmıştır.
 
-## Available Scripts
+## İçindekiler
+- [Özellikler](#özellikler)
+- [Kullanılan Teknolojiler](#kullanılan-teknolojiler)
+- [Kurulum](#kurulum)
+- [Kullanım](#kullanım)
+- [Projede Kullanılan Komutlar](#projede-kullanılan-komutlar)
+- [Katkıda Bulunma](#katkıda-bulunma)
+- [Lisans](#lisans)
 
-In the project directory, you can run:
+## Özellikler
 
-### `npm start`
+- **Harita Tabanlı COVID Bilgisi:** Kullanıcılar dünya haritası üzerinden bir ülkeye tıklayarak o ülkeye ait COVID verilerini görüntüleyebilir.
+- **Redux Toolkit ile Durum Yönetimi:** Tüm uygulama durumu Redux Toolkit ile yönetilmektedir.
+- **Test Edilmiş Dinamik Yapılar:** Projenin dinamik özellikleri için birim testler yazılmıştır ve başarıyla geçmiştir.
+- **Kapsamlı ve Kullanıcı Dostu Arayüz:** Basit ve sezgisel bir kullanıcı deneyimi sunar.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Kullanılan Teknolojiler
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React** - UI bileşenleri oluşturmak için
+- **Redux Toolkit** - Durum yönetimi
+- **react-simple-maps** - Harita görselleştirmesi
+- **Jest** - Unit test framework’ü
+- **Testing Library** - React bileşenlerinin test edilmesi
 
-### `npm test`
+## Kurulum
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Projeyi çalıştırmak için aşağıdaki adımları izleyin:
 
-### `npm run build`
+1. Bu projeyi bilgisayarınıza klonlayın:
+   ```bash
+   git clone https://github.com/cengo14/react-covid-map-project.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Proje dizinine gidin:
+   ```bash
+   cd react-covid-map-project
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Gerekli bağımlılıkları yükleyin:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Kullanım
 
-### `npm run eject`
+Projeyi yerel sunucuda başlatmak için aşağıdaki komutu çalıştırın:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`http://localhost:3000` adresine giderek uygulamayı görüntüleyebilirsiniz.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Ekran Görüntüsü
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Covid Map](screenshot.gif)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Ülke Seçimi:** Harita üzerinde herhangi bir ülkeye tıklayın.
+2. **COVID Bilgilerini Görüntüleme:** Seçilen ülkeye ait COVID detayları ekranda görünecektir.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Projede Kullanılan Komutlar
 
-### Code Splitting
+- **Proje Başlatma:** `npm start` - Projeyi yerel sunucuda başlatır.
+- **Test Çalıştırma:** `npm test` - Unit testleri çalıştırır.
+- **Build:** `npm run build` - Projeyi production için derler.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Katkıda Bulunma
 
-### Analyzing the Bundle Size
+Bu projeye katkıda bulunmak isterseniz, lütfen bir **pull request** açın veya bir **issue** açarak önerilerinizi paylaşın.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Lisans
 
-### Making a Progressive Web App
+Bu proje [MIT Lisansı](https://opensource.org/licenses/MIT) ile lisanslanmıştır.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Umarım README dosyası işinize yarar! Başka bir konuda yardıma ihtiyaç duyarsanız buradayım. 😊
