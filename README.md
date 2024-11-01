@@ -76,7 +76,3 @@ Bu projeye katkıda bulunmak isterseniz, lütfen bir **pull request** açın vey
 ## Lisans
 
 Bu proje [MIT Lisansı](https://opensource.org/licenses/MIT) ile lisanslanmıştır.
-
----
-
-Umarım README dosyası işinize yarar! Başka bir konuda yardıma ihtiyaç duyarsanız buradayım. 😊
